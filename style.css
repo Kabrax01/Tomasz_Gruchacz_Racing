@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  min-width: 100vw;
+  max-width: 100vw;
   background-color: var(--Black);
   display: grid;
   align-content: center;
@@ -151,18 +151,16 @@ nav span {
   z-index: 10;
   background-color: var(--White);
   right: -16rem;
-  top: 8.8rem;
+  top: 2rem;
   min-width: 8rem;
   color: var(--Black);
   padding: 0 1rem 1rem 1rem;
   border-bottom-left-radius: 10px;
   border: 2px solid var(--Orange);
-  display: none;
   transition: all 1s;
 }
 
 .show {
-  display: initial;
   right: 0;
 }
 
@@ -176,9 +174,11 @@ ul li {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .main_photo {
@@ -236,7 +236,6 @@ main {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* padding: 5rem; */
 }
 
 .slide {
@@ -575,7 +574,7 @@ body {
   }
 
   .menu {
-    top: 4rem;
+    top: 2rem;
   }
   .section_1 {
     margin: 10rem 4rem;
@@ -656,7 +655,7 @@ body {
   }
 
   .menu {
-    top: 5rem;
+    top: 3rem;
   }
 
   .section_1 {
@@ -735,6 +734,10 @@ body {
 }
 
 @media screen and (max-width: 481px) {
+  .navigation {
+    padding-right: 0.3rem;
+  }
+
   .section_2 {
     max-height: 95vh;
   }
