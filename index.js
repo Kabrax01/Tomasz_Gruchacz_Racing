@@ -41,7 +41,7 @@ function moveUp(entries) {
 }
 
 const aboutObserver = new IntersectionObserver(animate, {
-  threshold: 0.6,
+  threshold: 0.4,
 });
 
 aboutObserver.observe(about);

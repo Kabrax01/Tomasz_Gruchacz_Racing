@@ -63,7 +63,6 @@ export default function formValidationService() {
 
   formButton.addEventListener("click", (e) => {
     validEmail = isValidEmail(formEmail.value);
-    console.log(formEmail.value);
     formValidation(e);
   });
 

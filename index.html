@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-pl">
   <head>
+    <meta name="description" content="Tomasz Gruchacz Racing website, contact with Tomek">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" 
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
           <div class="menu_text">
             <span class="toggle_text toggle">MENU</span>
           </div class="toggle">
-          <button type="button" class="toggle" id="toggle">
+          <button type="button" class="toggle" id="toggle" aria-label="show menu button">
             <span></span>
           </button>
         </div>
@@ -51,7 +52,7 @@
           class="main_photo"
           src="./img/Webp/cornering2.webp"
           alt="motorcycle on racetrack"
-        />
+          />
       </div>
 
       <section class="section section_1 behaviour" data-scroll="section_1">
@@ -73,7 +74,7 @@
             </p>
           </div>
           <div class="line line_mobile"></div>
-          <img class="winner_mobile_img" src="./img/Webp/winner_mobile.webp" alt="">
+          <img class="winner_mobile_img" src="./img/Webp/winner_mobile.webp" alt="" loading="lazy">
           <div class="line line_mobile"></div>
           <div class="about_text">
             <h2>Dlaczego wyścigi ?</h2>
@@ -96,14 +97,14 @@
         class="slider section section_2 behaviour"
         data-scroll="section_2"
       >
-        <img src="./img/Webp/slider_1.webp" id="slide_1" alt="" class="slide slide_1" />
-        <img src="./img/Webp/slider_2.webp" id="slide_2" alt="" class="slide slide_2" />
-        <img src="./img/Webp/slider_3.webp" id="slide_3" alt="" class="slide slide_3" />
-        <img src="./img/Webp/slider_4.webp" id="slide_4" alt="" class="slide slide_4" />
-        <img src="./img/Webp/slider_5.webp" id="slide_5" alt="" class="slide slide_5" />
-        <img src="./img/Webp/slider_6.webp" id="slide_6" alt="" class="slide slide_6" />
-        <img src="./img/Webp/slider_7.webp" id="slide_7" alt="" class="slide slide_7" />
-        <button>
+        <img src="./img/Webp/slider_1.webp" id="slide_1" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_1" loading="lazy"/>
+        <img src="./img/Webp/slider_2.webp" id="slide_2" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_2" loading="lazy"/>
+        <img src="./img/Webp/slider_3.webp" id="slide_3" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_3" loading="lazy"/>
+        <img src="./img/Webp/slider_4.webp" id="slide_4" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_4" loading="lazy"/>
+        <img src="./img/Webp/slider_5.webp" id="slide_5" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_5" loading="lazy"/>
+        <img src="./img/Webp/slider_6.webp" id="slide_6" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_6" loading="lazy"/>
+        <img src="./img/Webp/slider_7.webp" id="slide_7" alt="Tomasz Gruchacz racing on track on motorcycle" class="slide slide_7" loading="lazy"/>
+        <button aria-label="show next slide button">
           <img
             role="button"
             class="slide_btn btn_right"
@@ -111,7 +112,7 @@
             alt=""
           />
         </button>
-        <button>
+        <button aria-label="show previous slide button">
           <img
             role="button"
             class="slide_btn btn_left"
@@ -199,6 +200,7 @@
       <img
       role="button"
       class="btn_up--img"
+      aria-label="go to top button"
       src="./img/arrow_right.png"
       alt=""
       />

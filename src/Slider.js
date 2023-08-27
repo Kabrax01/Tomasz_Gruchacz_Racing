@@ -15,7 +15,7 @@ export default function slider() {
     slides.forEach((_, i) => {
       dotContainer.insertAdjacentHTML(
         "beforeend",
-        `<button class="dot" data-slide="${i}"></button>`
+        `<button class="image_slider_button" aria-label="image slider button" data-slide="${i}"></button>`
       );
     });
   }
