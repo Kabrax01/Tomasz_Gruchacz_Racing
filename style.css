@@ -347,7 +347,7 @@ form {
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
   min-width: 45vw;
-  margin-bottom: 4rem;
+  margin: 0 1rem 4rem 1rem;
 }
 
 .name {
@@ -770,9 +770,5 @@ body {
 
   .modal_icons img {
     height: 1.5rem;
-  }
-
-  form {
-    margin: 0 1rem;
   }
 }

@@ -1,6 +1,6 @@
 export default function modalService() {
   const modal = document.querySelector(".email_modal");
-  const activationText = document.querySelector(".credits");
+  const activationText = document.querySelector(".copyright");
   const copyBtn = document.querySelector(".copy_btn");
   const message = document.querySelector(".copy_span");
   const closeBtn = document.querySelector(".close_span");
