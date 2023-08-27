@@ -507,11 +507,13 @@ body {
   flex-direction: column;
   font-family: "Handjet", cursive !important;
   text-transform: uppercase;
-  bottom: 5rem;
+  bottom: 1rem;
+  left: -10rem;
   border-radius: 5px;
   background: var(--Neon_Green);
   color: var(--Black);
   padding: 0.5rem 1rem;
+  z-index: 5;
   opacity: 0;
 }
 
@@ -539,7 +541,8 @@ body {
 
 .show_modal {
   opacity: 1;
-  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 @keyframes resize {
@@ -726,6 +729,10 @@ body {
   }
   .slide_7 {
     content: url("./img/Webp/slider_mobile_7.webp");
+  }
+
+  .slide_btn {
+    display: none;
   }
 }
 
