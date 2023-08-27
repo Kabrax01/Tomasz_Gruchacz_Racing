@@ -697,6 +697,8 @@ body {
   .slide {
     max-height: 100vh;
     max-width: 95vw;
+    margin: 0;
+    padding: 0;
   }
 
   .description {

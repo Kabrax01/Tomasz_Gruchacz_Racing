@@ -1,7 +1,6 @@
 "use strict";
 
 export default function slider() {
-  const slidesContainer = document.querySelector(".slider_container");
   const slides = document.querySelectorAll(".slide");
   const slideBtnLeft = document.querySelector(".btn_left");
   const slideBtnRight = document.querySelector(".btn_right");
@@ -116,4 +115,23 @@ export default function slider() {
   slides.forEach((slide) => intervalEngagement(slide));
 
   slideButtons.forEach((btn) => intervalEngagement(btn));
+
+  slides.forEach((slide) => {
+    let end;
+    let start;
+
+    slide.addEventListener("touchstart", (e) => {
+      clearInterval(slideInterval);
+      start = e.changedTouches[0].screenX;
+    });
+    slide.addEventListener("touchend", (e) => {
+      end = e.changedTouches[0].screenX;
+      if (start > end) {
+        nextSlide();
+      } else {
+        previousSlide();
+      }
+      autoSlide();
+    });
+  });
 }
