@@ -14,7 +14,7 @@ export default function slider() {
     slides.forEach((_, i) => {
       dotContainer.insertAdjacentHTML(
         "beforeend",
-        `<button class="image_slider_button" aria-label="image slider button" data-slide="${i}"></button>`
+        `<button class="dot image_slider_button" aria-label="image slider button" data-slide="${i}"></button>`
       );
     });
   }
@@ -115,6 +115,8 @@ export default function slider() {
   slides.forEach((slide) => intervalEngagement(slide));
 
   slideButtons.forEach((btn) => intervalEngagement(btn));
+
+  // SWIPE ON MOBILE
 
   slides.forEach((slide) => {
     let end;
