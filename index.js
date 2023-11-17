@@ -28,6 +28,7 @@ const sectionObserver = new IntersectionObserver(moveUp, options);
 section.forEach((section) => sectionObserver.observe(section));
 
 function moveUp(entries) {
+  debugger;
   const [entry] = entries;
 
   section.forEach((section) => {
