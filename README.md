@@ -10,6 +10,16 @@
 <img src="/img/screen-shots/ss_TGR_3.png" width="500">
 </p>
 
+## General Information
+
+Landing page for Tomasz Gruchacz - motorcycle racer. With on-scroll animations and contact form.
+
+## Built with
+
+-   [Semantic HTML5 markup](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+-   [SCSS](https://sass-lang.com/)
+-   [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 ## Author
 
 - Github - [Kabrax01](https://github.com/Kabrax01)
